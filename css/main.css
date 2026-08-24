@@ -5,10 +5,10 @@ html {
     font-family: "San Francisco"
     , sans-serif;
     /* sans is fallback */
-    font-size: 18px;
+    font-size: 13px;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-    line-height: 1.5;
+    line-height: 1.3;
     min-height: 100vh;
     min-width: 300px;
     overflow-x: hidden;
@@ -21,15 +21,21 @@ html {
     min-height: 100vh;
 }
 
-.side{
-    max-height: 20rem;
-    max-width: 20rem;
-    justify-content: right;
+.name{
+    display:flex;
+    justify-content: center;
+    margin-bottom: 7.77px;
+    max-width:333px;
+}
+
+.intro{
+    max-width:333px;
 }
 
 .about{
-    max-width:26rem;
+    max-width:777px;
 }
+
 
 .name{
     font-size: xx-large;
@@ -46,14 +52,6 @@ a:hover {
     color:orange;
 }
 
-.picture-image{
-    border-radius: 37%;
-    /* round edges of image */
-    width: 333px;
-    height: 333px;
-    object-fit: cover;
-    /* crop not stretch image */
-}
 
 summary::marker {
   cursor: pointer;
@@ -75,7 +73,7 @@ Retrieved 2026-08-22, License - CC BY-SA 3.0
 @font-face {
   font-family: "San Francisco";
   /* defines San Francisco for the font */
-  font-weight: 400;
+  font-weight: 333;
   src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
 }
 
@@ -95,10 +93,6 @@ Retrieved 2026-08-22, License - CC BY-SA 3.0
         align-items: center;
         padding: 5rem 3rem;
     }
-    .side {
-        margin-bottom: 3rem;
-        width: 100%;
-    }
 }
 
 @media screen and (min-width: 800px) {
@@ -108,14 +102,6 @@ Retrieved 2026-08-22, License - CC BY-SA 3.0
         justify-content: space-evenly;
         padding: 4rem;
     }
-    .side {
-        flex-grow: 0;
-        flex-shrink: 0;
-        height: 20rem;
-        margin-left: 4rem;
-        order: 2;
-        width: 20rem;
-    }
     .about {
         flex-grow: 1;
         flex-shrink: 1;
@@ -123,7 +109,39 @@ Retrieved 2026-08-22, License - CC BY-SA 3.0
 }
 
 .contact{
-    display:inline-block;
-    margin-top:.77rem;
+    display:flex;
+    margin-top: 7.77px;
+    margin-bottom: 14.4px;
     vertical-align:top;
+    justify-content: center;
+    max-width:333px;
+}
+
+.credits{
+    display:block;
+    margin-top:7.77px;
+    
+}
+
+.projects{
+    display:block;
+    margin-top:7.77px;
+}
+
+/* margins to help people read */
+
+.picture-image{
+    max-width:100%;
+    border-radius: 37%;
+    /* round edges of image */
+    width: 333px;
+    height: 333px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    /* crop not stretch image */
+
+}
+.picture{
+    float:right;
+    margin: 0 0 13px 33px;
 }
