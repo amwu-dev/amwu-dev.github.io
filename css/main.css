@@ -144,3 +144,20 @@ Retrieved 2026-08-22, License - CC BY-SA 3.0
 
 /* margins to help people read */
 
+.project{
+    display:flex;
+    align-items: flex-start;
+    gap: 0 13px;
+    margin-bottom:33px;
+}
+
+.project-image{
+    max-width:144px;
+    max-height:144px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+details{
+    margin-bottom:3px;
+}
