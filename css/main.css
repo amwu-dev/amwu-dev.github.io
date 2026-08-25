@@ -64,25 +64,24 @@ Retrieved 2026-08-22, License - CC BY-SA 3.0
   src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
 }
 
-.picture-image{
+.picture {
+    float: right;
+    width: 33%;
+    max-width: 333px;
+    margin: 0px 77px 13px 13px;
+}
+
+.picture-image {
+    display: block;
+    width: 100%;
+    height: auto;
     /* max-width:100%; */
     border-radius: 33%;
     /* round edges of image */
     max-width: 333px;        /* target size */
-    height: auto;
     aspect-ratio: 1 / 1;
     object-fit: cover;
-    width: 144%;
     /* crop not stretch image */
-}
-.picture{
-    display:flex;    /* float:right; */
-    /* margin: 0 0 13px 33px; */
-    gap: 13px 33px;
-    order:2;
-    margin-right: 77px;
-    /* margin-left:auto; */
-    align-self:flex-start;
 
 }
  /*4. Responsiveness */
